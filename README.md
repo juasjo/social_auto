@@ -29,24 +29,36 @@ Soporta programación automática de posts según la fecha en el nombre de la ca
 │   ├── save_cookies_tiktok.py
 ├── config.py                 # configuración general
 ├── run_all.sh                # ejecuta el scheduler
+├── requirements_pc.txt       # dependencias mínimas para exportar cookies en PC local
+├── requirements_server.txt   # dependencias mínimas para el servidor
 └── README.md
 ```
 
 ---
 
-## ⚙️ Instalación
+## 🔧 Requisitos previos
 
-1. Crear entorno virtual:
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
-   pip install selenium watchdog apscheduler
-   ```
+### En tu PC local (para exportar cookies)
+- Tener instalado **Python 3.10+**
+- Tener instalado **Google Chrome** (o Chromium)
+- Instalar dependencias:
+  ```bash
+  python3 -m venv venv
+  source venv/bin/activate
+  pip install -r requirements_pc.txt
+  ```
 
-2. Instalar Chromium y Chromedriver:
-   ```bash
-   sudo apt-get install -y chromium chromium-driver
-   ```
+### En el servidor
+- Tener instalado **Python 3.10+**
+- Instalar **Chromium y Chromedriver**:
+  ```bash
+  sudo apt-get install -y chromium chromium-driver
+  ```
+- Instalar dependencias:
+  ```bash
+  source venv/bin/activate
+  pip install -r requirements_server.txt
+  ```
 
 ---
 
@@ -73,7 +85,7 @@ Soporta programación automática de posts según la fecha en el nombre de la ca
 - Dentro de `data/instagram/` y `data/tiktok/`:
   - Crear carpetas con formato `DD_MM_YYYY`.
   - Si la fecha es **hoy o pasada** → publica inmediatamente.
-  - Si la fecha es **futura** → se programa a las **12:00** de ese día.
+  - Si la fecha es **futura** → se programa a las 12:00 de ese día.
 
 Ejemplo:
 ```
