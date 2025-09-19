@@ -1,0 +1,3 @@
+# Dependencias mínimas para exportadores de cookies en tu PC local
+selenium
+webdriver-manager
