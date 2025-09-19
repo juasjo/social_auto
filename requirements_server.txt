@@ -1,0 +1,5 @@
+# Dependencias mínimas para el servidor de Social Auto Publisher
+selenium
+watchdog
+apscheduler
+webdriver-manager
