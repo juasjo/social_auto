@@ -1,0 +1,5 @@
+- 70f1ac0 Actualizar README.md con documentación completa (2025-09-19)
+- 4e38a6f Añadir scripts y config con soporte de cookies (2025-09-19)
+- 729ebf5 Add GitHub Actions release workflow (2025-09-19)
+- 913df8e Add GitHub Actions CI workflow (2025-09-19)
+- 85538cd Initial commit (2025-09-19)
